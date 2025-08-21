@@ -1,0 +1,66 @@
+Nuriddin Sobirjonov
+Full Stack Dasturchi
+
+Farg'ona, O'zbekiston
+✉ sobirjonovnuriddin43@gmail.com
+📞 +998 99 097 42 03
+🔗 github.com/graff012
+💼 nuriddin-sobirjonov
+
+PROFESSIONAL XULOSA
+Men NestJS va Express yordamida REST API yarataman. PostgreSQL, MongoDB va Redis bilan ishlayman. Git, Docker va terminaldan har kuni foydalanaman. Frontend (React, Next.js) ham, backend dasturlash ham bilan qulay ishlayman.
+
+KO'NIKMALAR
+
+Dasturlash tillari:
+• JavaScript
+• TypeScript  
+• Python
+• C
+
+Backend:
+• Node.js
+• Express.js
+• NestJS
+
+Frontend:
+• React
+• Next.js
+
+Ma'lumotlar bazalari:
+• PostgreSQL
+• MongoDB
+• Redis
+
+Vositalar:
+• Git
+• Docker
+• Neovim
+• Linux CLI
+• Figma
+• CI/CD
+
+Tillar:
+• O'zbek (Ona tili)
+• Ingliz (O'rta daraja)
+
+ASOSIY LOYIHALAR
+
+YouTube Backend Kloni
+Video oqim imkoniyatlari bilan to'liq backend implementatsiyasi
+
+NestJS bilan Film Ilovasi
+Zamonaviy arxitektura bilan to'liq funksional film ilovasi
+
+O'quv Markazi Boshqaruv Tizimi
+Rivojlangan funksiyalar bilan ta'lim muassasalarini boshqarish uchun keng qamrovli tizim
+
+TA'LIM
+
+Najot Ta'lim
+Dasturiy Ta'minot Muhandisligi Asoslari Kursi
+Full-stack dasturlash bo'yicha intensiv kursni tugatdim. Amaliy ko'nikmalar va loyiha asosidagi ta'limga e'tibor qaratdim.
+
+---
+Portfolio veb-saytidan yaratilgan
+Aloqa: sobirjonovnuriddin43@gmail.com

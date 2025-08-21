@@ -1,0 +1,66 @@
+Nuriddin Sobirjonov
+Full Stack Developer
+
+Fergana, Uzbekistan
+✉ sobirjonovnuriddin43@gmail.com
+📞 +998 99 097 42 03
+🔗 github.com/graff012
+💼 nuriddin-sobirjonov
+
+PROFESSIONAL SUMMARY
+I build REST APIs using NestJS and Express. I work with PostgreSQL, MongoDB, and Redis. I use Git, Docker, and the terminal daily. Comfortable with both frontend (React, Next.js) and backend development.
+
+SKILLS
+
+Languages:
+• JavaScript
+• TypeScript  
+• Python
+• C
+
+Backend:
+• Node.js
+• Express.js
+• NestJS
+
+Frontend:
+• React
+• Next.js
+
+Databases:
+• PostgreSQL
+• MongoDB
+• Redis
+
+Tools:
+• Git
+• Docker
+• Neovim
+• Linux CLI
+• Figma
+• CI/CD
+
+Languages:
+• Uzbek (Native)
+• English (Intermediate)
+
+FEATURED PROJECTS
+
+YouTube Backend Clone
+Complete backend implementation with video streaming capabilities
+
+Movie App with NestJS
+Full-featured movie application with modern architecture
+
+Learning Center Management System
+Comprehensive system for managing educational institutions with advanced features
+
+EDUCATION
+
+Najot Ta'lim
+Software Engineering Foundation Course
+Completed intensive coursework in full-stack development. Focused on practical skills and project-based learning.
+
+---
+Generated from portfolio website
+Contact: sobirjonovnuriddin43@gmail.com
