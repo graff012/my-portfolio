@@ -43,7 +43,7 @@ jobs:
               echo "Git pull failed, cloning repo..."
               cd /home/ubuntu
               rm -rf app
-              git clone https://github.com/graff012/rozoviy-sad.git app
+              git clone https://github.com/graff012/my-portfolio.git app
             }
 
             # Rebuild Docker image and restart
