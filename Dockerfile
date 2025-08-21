@@ -29,7 +29,7 @@ RUN yarn install --omit=dev || npm install --production --frozen-lockfile
 # Copy the build output from builder stage
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
-COPY --from=builder /app/next.config.js ./next.config.js
+COPY --from=builder /app/next.config.mjs ./next.config.mjs
 
 # Expose the Next.js port
 EXPOSE 3000

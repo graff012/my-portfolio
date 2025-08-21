@@ -3,14 +3,12 @@ on:
   push:
     branches:
       - main
-
 jobs:
   deployment:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
       - name: Deploy to EC2
         env:
           SERVER_HOST: ${{ secrets.SERVER_HOST }}
@@ -23,35 +21,41 @@ jobs:
           printf '%s\n' "$SSH_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           echo "StrictHostKeyChecking no" >> ~/.ssh/config
-
           # Create .env file
           cat > .env << EOF
           RESEND_API_KEY=$RESEND_API_KEY
           EOF
-
           # Copy .env to server
           scp .env "$SERVER_USER@$SERVER_HOST:/home/ubuntu/app/.env"
-
           # Deploy via SSH
           ssh "$SERVER_USER@$SERVER_HOST" '
             set -e
             REPO_DIR=/home/ubuntu/app
-            cd "$REPO_DIR"
-
-            # Pull latest code (fails if not a git repo)
-            git pull origin main || {
-              echo "Git pull failed, cloning repo..."
+            
+            # Check if directory exists and is a git repo
+            if [ -d "$REPO_DIR" ] && [ -d "$REPO_DIR/.git" ]; then
+              echo "Updating existing repository..."
+              cd "$REPO_DIR"
+              git pull origin main
+            else
+              echo "Cloning fresh repository..."
               cd /home/ubuntu
               rm -rf app
               git clone https://github.com/graff012/my-portfolio.git app
-            }
-
+              cd "$REPO_DIR"
+            fi
+            
+            # Now we are definitely in the right directory
+            echo "Current directory: $(pwd)"
+            echo "Files in directory: $(ls -la)"
+            
             # Rebuild Docker image and restart
             echo "Building new Docker image..."
             sudo docker stop nextjs-container || true
             sudo docker rm nextjs-container || true
-            sudo docker rmi my-nextjs-app || true
-
+            sudo docker rmi my-nextjs-app:latest || true
+            
+            # Build the Docker image (we are now in the correct directory)
             sudo docker build -t my-nextjs-app .
             
             sudo docker run -d \
@@ -59,9 +63,7 @@ jobs:
               --name nextjs-container \
               --restart unless-stopped \
               my-nextjs-app
-
             echo "Deployment complete."
           '
-
       - name: Clean up SSH key
         run: rm -rf ~/.ssh
