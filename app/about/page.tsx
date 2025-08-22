@@ -14,8 +14,8 @@ export default function AboutPage() {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a")
-    link.href = language === "uz" ? "/resume-uz.txt" : "/resume.txt"
-    link.download = language === "uz" ? "Nuriddin_Sobirjonov_Rezyume.txt" : "Nuriddin_Sobirjonov_Resume.txt"
+    link.href = "/Nuriddin_Sobirjonov_Resume_Main.pdf"
+    link.download = "Nuriddin_Sobirjonov_Resume_Main.pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
