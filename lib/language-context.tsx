@@ -23,7 +23,7 @@ const translations = {
     // Home page
     hiIm: "Hi, I'm",
     heroDescription:
-      "Full-stack developer from Uzbekistan who is passionate about creating beautiful, functional web applications. I turn ideas into reality through clean code and thoughtful design.",
+      "Fullstack developer from Uzbekistan who is passionate about creating beautiful, functional web applications. I turn ideas into reality through clean code and thoughtful design.",
     viewMyWork: "View My Work",
     getInTouch: "Get In Touch",
     whatIDo: "What I Do",
