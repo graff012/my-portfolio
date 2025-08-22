@@ -3,9 +3,13 @@ FROM node:18-alpine AS builder
 # Set working directory
 WORKDIR /app
 
+# Configure yarn for better network handling
+RUN yarn config set network-timeout 300000
+RUN yarn config set registry https://registry.npmjs.org/
+
 # Install dependencies
 COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile
+RUN yarn install --frozen-lockfile --network-timeout 300000
 
 # Copy the rest of the app
 COPY . .
@@ -22,7 +26,8 @@ ENV NODE_ENV=production
 
 # Install only production dependencies
 COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile --production
+RUN yarn config set network-timeout 300000 && \
+    yarn install --frozen-lockfile --production --network-timeout 300000
 
 # Copy the build output from builder stage
 COPY --from=builder /app/.next ./.next
