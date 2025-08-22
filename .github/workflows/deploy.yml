@@ -1,4 +1,4 @@
-name: Deploy To server
+name: Deploy To Server
 on:
   push:
     branches:
