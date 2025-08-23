@@ -49,7 +49,7 @@ const translations = {
     // About page
     aboutMe: "About Me",
     aboutDescription:
-      "I'm a full-stack developer who is eagerly want to learn about programming and build interactive applications. This is my story",
+      "I'm a fullstack developer who is eagerly want to learn about programming and build interactive applications. This is my story",
     myJourney: "My Journey",
     journeyText1:
       "My journey into web development started during my computer science studies, where I discovered my passion for creating digital experiences that solve real-world problems. What began as curiosity about how websites work has evolved into a career dedicated to crafting beautiful, functional applications.",
