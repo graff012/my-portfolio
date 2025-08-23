@@ -61,7 +61,7 @@ const translations = {
     softwareEngineering: "Software Bootcamp Fullstack Course",
     najotTalim: "Najot Ta'lim • 2024 - 2025",
     educationDescription:
-      "Completed intensive coursework in full-stack development. Focused on practical skills and project-based learning.",
+      "Completed intensive coursework in fullstack development. Focused on practical skills and project-based learning.",
     quickInfo: "Quick Info",
     availableForProjects: "Available for Projects",
     downloadResume: "Download Resume",
