@@ -37,7 +37,7 @@ export default function WorksPage() {
       description:
         "Complete backend implementation with video streaming capabilities, user authentication, and content management.",
       descriptionKey: "youtubeBackendDescription",
-      images: ["/images/youtube-backend-api.png"],
+      images: ["/images/youtube-clone.png"],
       technologies: ["Node.js", "Express.js", "MongoDB", "JWT", "Multer"],
       category: "Backend",
       featured: true,
@@ -51,7 +51,7 @@ export default function WorksPage() {
       description:
         "Comprehensive system for managing educational institutions with student enrollment, course management, and progress tracking.",
       descriptionKey: "learningCenterDescription",
-      images: ["/images/learning-center-dashboard.png"],
+      images: ["/images/LMS.png"],
       technologies: ["React", "Node.js", "PostgreSQL", "Express.js", "JWT"],
       category: "Full-Stack",
       featured: true,

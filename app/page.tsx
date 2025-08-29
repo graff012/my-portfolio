@@ -362,7 +362,7 @@ export default function HomePage() {
             <Card className="overflow-hidden hover:shadow-xl transition-shadow group">
               <div className="h-48 relative overflow-hidden">
                 <ProjectImageCarousel
-                  images={["/images/youtube-backend-api.png"]}
+                  images={["/images/youtube-clone.png"]}
                   alt="YouTube Backend Clone API"
                   className="h-full w-full"
                 />
